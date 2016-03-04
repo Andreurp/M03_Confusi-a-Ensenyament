@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.andreu.confusio.SampleController">
+	<bottom>
+		<Pane prefHeight="411.0" prefWidth="551.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="fitxer" layoutX="21.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#cargaFitxer" prefHeight="28.0" prefWidth="94.0" text="Llegir fitxer" />
+				<Button fx:id="desa" layoutX="21.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#generarFitxer" prefHeight="28.0" prefWidth="94.0" text="Desa" />
+				<Separator layoutX="154.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="8.0" />
+				<Label fx:id="direc" contentDisplay="CENTER" layoutX="208.0" layoutY="64.0" prefHeight="20.0" prefWidth="98.0" text="Director/a:" textAlignment="CENTER" textOverrun="CLIP">
+					<font>
+						<Font name="Serif Italic" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="sec" layoutX="208.0" layoutY="128.0" prefHeight="20.0" prefWidth="83.0" text="Secretaria:">
+					<font>
+						<Font name="Serif Italic" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="capEstudi" layoutX="208.0" layoutY="189.0" text="Caps d'estudis:">
+					<font>
+						<Font name="Serif Italic" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="coord" layoutX="209.0" layoutY="310.0" text="Coordinació:">
+					<font>
+						<Font name="Serif Italic" size="18.0" />
+					</font>
+				</Label>
+				<Button fx:id="calcula" layoutX="422.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#canviaNoms" prefHeight="25.0" prefWidth="85.0" text="Recalcular" />
+				<Label fx:id="nomDirec" layoutX="314.0" layoutY="60.0" prefHeight="28.0" prefWidth="216.0" style="-fx-background-color: white; -fx-border-color: black;" textOverrun="CLIP">
+					<font>
+						<Font name="Serif Regular" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="nomSec" layoutX="313.0" layoutY="124.0" prefHeight="28.0" prefWidth="218.0" style="-fx-background-color: white; -fx-border-color: black;" />
+				<Label fx:id="nomCapEstudi" alignment="TOP_LEFT" layoutX="326.0" layoutY="189.0" prefHeight="82.0" prefWidth="207.0" style="-fx-background-color: white; -fx-border-color: black;" />
+				<Label fx:id="nomCoord" layoutX="313.0" layoutY="307.0" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: white; -fx-border-color: black;" />
+			</children>
+		</Pane>
+	</bottom>
+</BorderPane>
